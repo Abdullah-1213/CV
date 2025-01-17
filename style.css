@@ -1,0 +1,134 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f9;
+}
+
+.Profile_Pic {
+    margin-top: 80px;
+    margin-bottom: 70px;
+    width: 150px; 
+    height: 150px;
+    border: 5px solid #f4f4f9;
+    border-radius: 50%; 
+    overflow: hidden; 
+    display: inline-block; 
+} 
+
+.contact{
+    text-align: left;
+    margin-left: 66px;
+    padding: 20px;
+    border-radius: 8px;
+
+    width: 300px;
+}
+.Profile_Name{
+    margin-top: 100px;
+    margin-bottom: 120px;
+    margin-left: -106px;
+}
+.Left_Section{
+    background-color: #234d8c;
+    color: white;
+
+}
+.fullname{
+    margin-bottom: -11px;
+}
+.name{
+    color: #5c6869;
+    font-size: xx-large;
+    margin-bottom: -13px;
+}
+.last{
+    color: #809181;
+    font-size: xx-large;
+    margin-bottom: -13px;
+}
+/* .prof{
+   font-size: larger;
+   padding-right:92px;
+   
+} */
+.prof {
+    font-size: 24px;
+    font-weight: bold;
+    padding-right:38px;
+    position: relative;
+    color: #333; 
+}
+
+.prof::before {
+    content: "";
+    position: absolute;
+    bottom: -5px; 
+    left: 0;
+    width: 5ch; 
+    height: 4px; 
+    background-color: #9fa0bd; 
+    margin-left: 220px
+}
+.Headi{
+    font-family: monospace;
+    color: #5a81bb;
+}
+
+@media (min-width: 767px) {
+    .Profile_Name1 {
+        display: none;
+    }
+}
+@media (max-width: 767px) {
+    .Profile_Name {
+        display: none;
+    }
+}
+.main_head{
+    padding-top: 5px;
+    font-family: monospace;
+}
+.Main{
+    margin-left: 20px;
+}
+.work-experience {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    position: relative;
+    padding-left: 30px; 
+}
+
+/* Vertical line */
+.work-experience::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 15px; 
+    width: 2px; 
+    background-color: #555;
+}
+
+/* Main section for each experience */
+.experience-item {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+/* Bullet for each main heading */
+.experience-item::before {
+    content: "●";
+    position: absolute;
+    left: -20px; 
+    top: 0;
+    font-size: 20px;
+    color: #555; 
+}
+
+
+
